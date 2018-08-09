@@ -1,0 +1,3 @@
+<launch>
+  <node name="servo_and_imu" pkg="servo_and_imu" type="servo_and_imu_node" output="screen" launch-prefix="sudo -E"/>
+</launch>
