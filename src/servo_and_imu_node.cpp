@@ -13,7 +13,7 @@ extern "C"
 class PWMChannel
 {
 public:
-  PWMChannel(ros::NodeHandle nh, int channel_id)
+  PWMChannel(ros::NodeHandle& nh, int channel_id)
   {
     _channel_id = channel_id;
     std::string id = std::to_string(channel_id);
@@ -73,7 +73,7 @@ private:
 class Imu
 {
 public:
-  Imu(ros::NodeHandle nh) : _node("~")
+  Imu(ros::NodeHandle& nh) : _node("~")
   {
     // start with default config and modify based on options
     rc_imu_config_t conf = rc_default_imu_config();
