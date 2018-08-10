@@ -1,0 +1,4 @@
+frequency: 50
+
+channels:
+  [1, 3, 5]
