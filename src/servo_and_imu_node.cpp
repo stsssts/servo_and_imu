@@ -162,7 +162,6 @@ void signal_handler(__attribute__ ((unused)) int dummy)
 {
   rc_set_state(EXITING);
   rc_cleanup();
-  ROS_WARN("my signal handler");
   ros::shutdown();
 }
 
